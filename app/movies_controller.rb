@@ -25,8 +25,9 @@ end
 
 def can_be_created_in_a_block(m = {title: "Home Alone", release_date: 1990})
     m = Movie.create do |mov|
-    mov.title = "Home Alone" 
-    mov.release_date = 1990
+    mov.title = "The Room" 
+    mov.release_date = 2003 
+    mov.save 
   end	
 end	
 
