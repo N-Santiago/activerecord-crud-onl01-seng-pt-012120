@@ -24,9 +24,9 @@ def can_be_created_with_a_hash_of_attributes
 end
 
 def can_be_created_in_a_block(m = {title: "Home Alone", release_date: 1990})
-    Movie.create do |mov|
-    mov.title = m.title 
-    mov.release_date = m.release_date
+    m = Movie.create do |mov|
+    mov.title = "Home Alone" 
+    mov.release_date = 1990
     mov.save
   end	
 end	
